@@ -1,0 +1,480 @@
+:root {
+  /* ===========================
+     Background
+  =========================== */
+  --bg: #f5f7fb;
+  --bg-secondary: #eef2f8;
+  --bg-tertiary: #e8edf5;
+
+  /* ===========================
+     Surface
+  =========================== */
+  --surface: rgba(255, 255, 255, 0.75);
+  --surface-hover: rgba(255, 255, 255, 0.9);
+  --surface-solid: #ffffff;
+
+  /* ===========================
+     Glass
+  =========================== */
+  --glass-bg: rgba(255, 255, 255, 0.45);
+  --glass-border: rgba(255, 255, 255, 0.35);
+  --glass-shadow: rgba(15, 23, 42, 0.08);
+
+  /* ===========================
+     Text
+  =========================== */
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  --text-invert: #ffffff;
+
+  /* ===========================
+     Border
+  =========================== */
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
+
+  /* ===========================
+     Brand
+  =========================== */
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --primary-soft: rgba(59, 130, 246, 0.12);
+
+  /* ===========================
+     Status
+  =========================== */
+  --success: #22c55e;
+  --success-soft: rgba(34, 197, 94, 0.14);
+
+  --warning: #f59e0b;
+  --warning-soft: rgba(245, 158, 11, 0.14);
+
+  --danger: #ef4444;
+  --danger-soft: rgba(239, 68, 68, 0.14);
+
+  --info: #06b6d4;
+  --info-soft: rgba(6, 182, 212, 0.14);
+
+  /* ===========================
+     Badge
+  =========================== */
+  --badge-algorithm: #4f46e5;
+  --badge-study: #0ea5e9;
+  --badge-work: #fb923c;
+  --badge-health: #22c55e;
+
+  /* ===========================
+     Progress
+  =========================== */
+  --progress-track: #e2e8f0;
+  --progress-fill: var(--primary);
+
+  /* ===========================
+     Icon
+  =========================== */
+  --icon: #64748b;
+  --icon-active: var(--primary);
+
+  /* ===========================
+     Navigation
+  =========================== */
+  --nav-bg: rgba(255, 255, 255, 0.55);
+  --nav-active: rgba(59, 130, 246, 0.12);
+
+  /* ===========================
+     Radius
+  =========================== */
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 999px;
+
+  /* ===========================
+     Shadow
+  =========================== */
+  --shadow-xs: 0 2px 6px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 6px 16px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 12px 32px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 20px 60px rgba(15, 23, 42, 0.12);
+
+  /* ===========================
+     Blur
+  =========================== */
+  --blur: blur(20px);
+
+  /* ===========================
+     Animation
+  =========================== */
+  --transition: 0.25s ease;
+}
+
+.dark {
+  --bg: #09090b;
+  --bg-secondary: #111827;
+  --bg-tertiary: #1e293b;
+
+  --surface: rgba(30, 41, 59, 0.55);
+  --surface-hover: rgba(30, 41, 59, 0.8);
+  --surface-solid: #1e293b;
+
+  --glass-bg: rgba(17, 24, 39, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --glass-shadow: rgba(0, 0, 0, 0.4);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-invert: #ffffff;
+
+  --border: rgba(255, 255, 255, 0.08);
+  --border-light: rgba(255, 255, 255, 0.04);
+
+  --primary: #60a5fa;
+  --primary-hover: #3b82f6;
+  --primary-soft: rgba(96, 165, 250, 0.14);
+
+  --success: #4ade80;
+  --success-soft: rgba(74, 222, 128, 0.14);
+
+  --warning: #fbbf24;
+  --warning-soft: rgba(251, 191, 36, 0.14);
+
+  --danger: #f87171;
+  --danger-soft: rgba(248, 113, 113, 0.14);
+
+  --info: #22d3ee;
+  --info-soft: rgba(34, 211, 238, 0.14);
+
+  --badge-algorithm: #818cf8;
+  --badge-study: #38bdf8;
+  --badge-work: #fb923c;
+  --badge-health: #4ade80;
+
+  --progress-track: rgba(255, 255, 255, 0.08);
+  --progress-fill: var(--primary);
+
+  --icon: #94a3b8;
+  --icon-active: var(--primary);
+
+  --nav-bg: rgba(17, 24, 39, 0.65);
+  --nav-active: rgba(96, 165, 250, 0.16);
+
+  --shadow-xs: 0 2px 6px rgba(0, 0, 0, 0.2);
+  --shadow-sm: 0 6px 18px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 12px 36px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 24px 70px rgba(0, 0, 0, 0.55);
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-xl);
+}
+
+/* ===========================
+   Background
+=========================== */
+
+.bg-app {
+  background: var(--bg);
+}
+
+.bg-secondary {
+  background: var(--bg-secondary);
+}
+
+.bg-tertiary {
+  background: var(--bg-tertiary);
+}
+
+/* ===========================
+   Surface
+=========================== */
+
+.bg-surface {
+  background: var(--surface);
+}
+
+.bg-surface-hover {
+  background: var(--surface-hover);
+}
+
+.bg-surface-solid {
+  background: var(--surface-solid);
+}
+
+/* ===========================
+   Glass
+=========================== */
+
+.bg-glass {
+  background: var(--glass-bg);
+}
+
+.border-glass {
+  border: 1px solid var(--glass-border);
+}
+
+.shadow-glass {
+  box-shadow: var(--glass-shadow);
+}
+
+/* ===========================
+   Text
+=========================== */
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-invert {
+  color: var(--text-invert);
+}
+
+/* ===========================
+   Border
+=========================== */
+
+.border-default {
+  border-color: var(--border);
+}
+
+.border-light {
+  border-color: var(--border-light);
+}
+
+/* ===========================
+   Brand
+=========================== */
+
+.bg-primary {
+  background: var(--primary);
+}
+
+.bg-primary-soft {
+  background: var(--primary-soft);
+}
+
+.text-primary-color {
+  color: var(--primary);
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+
+.hover-primary:hover {
+  background: var(--primary-hover);
+}
+
+/* ===========================
+   Success
+=========================== */
+
+.bg-success {
+  background: var(--success);
+}
+
+.bg-success-soft {
+  background: var(--success-soft);
+}
+
+.text-success {
+  color: var(--success);
+}
+
+/* ===========================
+   Warning
+=========================== */
+
+.bg-warning {
+  background: var(--warning);
+}
+
+.bg-warning-soft {
+  background: var(--warning-soft);
+}
+
+.text-warning {
+  color: var(--warning);
+}
+
+/* ===========================
+   Danger
+=========================== */
+
+.bg-danger {
+  background: var(--danger);
+}
+
+.bg-danger-soft {
+  background: var(--danger-soft);
+}
+
+.text-danger {
+  color: var(--danger);
+}
+
+/* ===========================
+   Info
+=========================== */
+
+.bg-info {
+  background: var(--info);
+}
+
+.bg-info-soft {
+  background: var(--info-soft);
+}
+
+.text-info {
+  color: var(--info);
+}
+
+/* ===========================
+   Badge
+=========================== */
+
+.bg-badge-algorithm {
+  background: var(--badge-algorithm);
+}
+
+.bg-badge-study {
+  background: var(--badge-study);
+}
+
+.bg-badge-work {
+  background: var(--badge-work);
+}
+
+.bg-badge-health {
+  background: var(--badge-health);
+}
+
+/* ===========================
+   Progress
+=========================== */
+
+.progress-track {
+  background: var(--progress-track);
+}
+
+.progress-fill {
+  background: var(--progress-fill);
+}
+
+/* ===========================
+   Icon
+=========================== */
+
+.icon {
+  color: var(--icon);
+}
+
+.icon-active {
+  color: var(--icon-active);
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+.nav-bg {
+  background: var(--nav-bg);
+}
+
+.nav-active {
+  background: var(--nav-active);
+}
+
+/* ===========================
+   Radius
+=========================== */
+
+.rounded-xs {
+  border-radius: var(--radius-xs);
+}
+
+.rounded-sm {
+  border-radius: var(--radius-sm);
+}
+
+.rounded-md {
+  border-radius: var(--radius-md);
+}
+
+.rounded-lg {
+  border-radius: var(--radius-lg);
+}
+
+.rounded-xl {
+  border-radius: var(--radius-xl);
+}
+
+.rounded-full-custom {
+  border-radius: var(--radius-full);
+}
+
+/* ===========================
+   Shadow
+=========================== */
+
+.shadow-xs {
+  box-shadow: var(--shadow-xs);
+}
+
+.shadow-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow-md {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* ===========================
+   Blur
+=========================== */
+
+.blur-glass {
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+}
+
+/* ===========================
+   Transition
+=========================== */
+
+.transition-default {
+  transition: var(--transition);
+}
+
+/* ===========================
+   Complete Glass Card
+=========================== */
+
+/* .glass {
+  background: var(--glass-bg);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-xl);
+} */
