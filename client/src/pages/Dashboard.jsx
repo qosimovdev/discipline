@@ -2,12 +2,14 @@ import CalendarCard from "@/components/common/cards/CalendarCard";
 import ProgressCard from "@/components/common/cards/ProgressCard";
 import TodayFocusCard from "@/components/common/cards/TodayFocusCard";
 import TodayTasksCard from "@/components/common/cards/TodayTasksCard";
+import WeeklyStatsCard from "@/components/common/cards/WeeklyStatsCard";
 
 function Dashboard() {
   const todayFocus = {
     title: "Finish React Dashboard",
     description: "Complete the dashboard UI and prepare reusable components.",
     time: "2h 30m",
+    priority: "HIGH",
   };
 
   const tasks = [
@@ -36,8 +38,9 @@ function Dashboard() {
       id: 4,
       title: "Workout",
       category: "Health",
+      streak: 5,
       time: "06:00 PM",
-      completed: false,
+      completed: true,
     },
   ];
 
@@ -49,7 +52,9 @@ function Dashboard() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-4xl font-bold">Good Morning, Ibrohim 👋</h1>
+          <h1 className="text-4xl font-bold text-primary">
+            Good Morning, Ibrohim 👋
+          </h1>
 
           <p className="mt-2 text-secondary">Stay consistent today.</p>
         </div>
@@ -62,6 +67,7 @@ function Dashboard() {
             progress={progress}
             completed={completed}
             total={tasks.length}
+            streak={tasks.streak}
             className="w-full"
           />
         </div>
@@ -76,6 +82,10 @@ function Dashboard() {
 
         <div className="col-span-7 md:col-span-5">
           <CalendarCard />
+        </div>
+
+        <div className="col-span-7 md:col-span-5">
+          <WeeklyStatsCard />
         </div>
       </div>
     </section>

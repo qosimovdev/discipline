@@ -470,11 +470,28 @@
    Complete Glass Card
 =========================== */
 
-/* .glass {
-  background: var(--glass-bg);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: var(--blur);
-  border: 1px solid var(--glass-border);
-  box-shadow: var(--shadow-md);
-  border-radius: var(--radius-xl);
-} */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-app);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+  border: 2px solid var(--bg-app);
+}
+::-webkit-scrollbar-thumb:hover {
+  filter: brightness(0.9);
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--bg-app);
+}
+::selection {
+  background: var(--primary);
+  color: white;
+}
