@@ -353,8 +353,8 @@
   background: var(--badge-algorithm);
 }
 
-.bg-badge-study {
-  background: var(--badge-study);
+.badge-study {
+  color: var(--badge-study);
 }
 
 .bg-badge-work {

@@ -88,7 +88,7 @@ function MonthCalendar() {
           selected={date}
           onSelect={setDate}
           showOutsideDays
-          className="w-full rounded-2xl border-0 glass text-primary"
+          className=" rounded-2xl border-0 glass text-primary"
           classNames={{
             months: "w-full",
             month: "w-full space-y-3",

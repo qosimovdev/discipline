@@ -128,7 +128,7 @@ function AddTaskDialog({ open, onOpenChange, onSubmit }) {
                 <SelectValue placeholder="Select category" />
               </SelectTrigger>
 
-              <SelectContent className="glass">
+              <SelectContent className="">
                 <SelectItem value="React">React</SelectItem>
 
                 <SelectItem value="Algorithm">Algorithm</SelectItem>
@@ -155,7 +155,7 @@ function AddTaskDialog({ open, onOpenChange, onSubmit }) {
                 <SelectValue />
               </SelectTrigger>
 
-              <SelectContent className="glass">
+              <SelectContent className="">
                 <SelectItem value="High">🔴 High</SelectItem>
 
                 <SelectItem value="Medium">🟡 Medium</SelectItem>
@@ -211,11 +211,12 @@ function AddTaskDialog({ open, onOpenChange, onSubmit }) {
               type="button"
               variant="outline"
               onClick={() => onOpenChange(false)}
+              className="h-10"
             >
               Cancel
             </Button>
 
-            <Button type="submit">
+            <Button type="submit" className=" h-10">
               <Plus className="mr-2 h-4 w-4 cursor-pointer" />
               Add Task
             </Button>

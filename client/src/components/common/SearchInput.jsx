@@ -17,10 +17,7 @@ function SearchInput({ className, placeholder = "Search...", ...props }) {
         backdrop-blur-2xl
         transition-all
         duration-300
-
-        focus-within:border-primary
-        focus-within:ring-2
-        focus-within:ring-primary-soft
+        
       `,
         className,
       )}
@@ -31,6 +28,10 @@ function SearchInput({ className, placeholder = "Search...", ...props }) {
         type="text"
         placeholder={placeholder}
         className="
+        focus-within:badge-study
+        focus-within:ring-2
+        focus-within:ring-primary-soft
+          input-theme
           w-full
           bg-transparent
           text-sm

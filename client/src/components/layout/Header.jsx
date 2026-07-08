@@ -19,7 +19,7 @@ function Header() {
         </div>
 
         <nav className="flex items-center gap-4">
-          <SearchInput className="hidden md:flex" placeholder="Search..." />
+          {/* <SearchInput className="hidden md:flex" placeholder="Search..." /> */}
 
           <ul className="flex items-center gap-3">
             <li>
