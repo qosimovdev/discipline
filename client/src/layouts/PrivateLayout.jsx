@@ -5,10 +5,10 @@ import { Outlet } from "react-router-dom";
 
 function PrivateLayout() {
   return (
-    <main className="h-screen bg-app overflow-y-auto relative flex flex-col ">
+    <main className="h-screen bg-app overflow-y-auto relative flex flex-col">
       <Header />
 
-      <main className="flex-1 mx-auto max-w-7xl px-3 md:px-6 pt-28 pb-32">
+      <main className="flex-1 mx-0 md:mx-auto  max-w-7xl px-3 md:px-6 pt-28 pb-32">
         <Outlet />
         <AppRouter />
       </main>

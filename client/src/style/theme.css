@@ -395,6 +395,8 @@
 
 .nav-bg {
   background: var(--nav-bg);
+  backdrop-filter: var(--blur);
+  border-radius: var(--radius-xl);
 }
 
 .nav-active {
@@ -494,4 +496,8 @@ body {
 ::selection {
   background: var(--primary);
   color: white;
+}
+.input-theme:focus {
+  border-color: var(--badge-study);
+  box-shadow: 0 0 0 2px hsl(var(--primary) / 0.15);
 }

@@ -11,22 +11,21 @@ function SearchInput({ className, placeholder = "Search...", ...props }) {
         items-center
         gap-3
         rounded-full
-        border
-        border-[var(--glass-border)]
-        bg-[var(--glass-bg)]
+        border-glass
+        bg-glass
         px-4
         backdrop-blur-2xl
         transition-all
         duration-300
 
-        focus-within:border-[var(--primary)]
+        focus-within:border-primary
         focus-within:ring-2
-        focus-within:ring-[var(--primary-soft)]
+        focus-within:ring-primary-soft
       `,
         className,
       )}
     >
-      <Search size={18} className="text-[var(--text-muted)]" />
+      <Search size={18} className="text-muted" />
 
       <input
         type="text"
@@ -35,8 +34,8 @@ function SearchInput({ className, placeholder = "Search...", ...props }) {
           w-full
           bg-transparent
           text-sm
-          text-[var(--text-primary)]
-          placeholder:text-[var(--text-muted)]
+          text-primary
+          placeholder:text-muted
           outline-none
         "
         {...props}

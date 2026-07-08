@@ -77,7 +77,7 @@ function ProgressCard({ progress, completed, total, streak = 12 }) {
         {/* Background Glow */}
         <div className="absolute -top-16 -right-16 h-40 w-40 rounded-full bg-primary/10 blur-3xl pointer-events-none" />
 
-        <div className="relative flex flex-col justify-between h-full gap-8">
+        <div className="relative flex flex-col justify-between h-full gap-10">
           {/* Header */}
           <div className="flex justify-between items-start">
             <div>
@@ -110,7 +110,7 @@ function ProgressCard({ progress, completed, total, streak = 12 }) {
           </div>
 
           {/* Progress */}
-          <div className="space-y-4">
+          <div className="space-y-9">
             <Progress value={progress} className="h-3 rounded-full" />
 
             <div className="flex items-center justify-between">

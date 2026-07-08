@@ -1,7 +1,7 @@
 import CalendarCard from "@/components/common/cards/CalendarCard";
 import ProgressCard from "@/components/common/cards/ProgressCard";
 import TodayFocusCard from "@/components/common/cards/TodayFocusCard";
-import TodayTasksCard from "@/components/common/cards/TodayTasksCard";
+import TodayTasksCard from "@/components/common/tasks/TodayTasksCard";
 import WeeklyStatsCard from "@/components/common/cards/WeeklyStatsCard";
 
 function Dashboard() {
@@ -36,6 +36,14 @@ function Dashboard() {
     },
     {
       id: 4,
+      title: "Workout",
+      category: "Health",
+      streak: 5,
+      time: "06:00 PM",
+      completed: true,
+    },
+    {
+      id: 5,
       title: "Workout",
       category: "Health",
       streak: 5,
