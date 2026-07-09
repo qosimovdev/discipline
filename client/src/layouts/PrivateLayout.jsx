@@ -1,6 +1,5 @@
 import Dock from "@/components/layout/Dock";
 import Header from "@/components/layout/Header";
-import AppRouter from "@/routes/AppRouter";
 import { Outlet } from "react-router-dom";
 
 function PrivateLayout() {
@@ -10,7 +9,6 @@ function PrivateLayout() {
 
       <main className="flex-1 mx-0 md:mx-auto  max-w-7xl px-3 md:px-6 pt-28 pb-32">
         <Outlet />
-        <AppRouter />
       </main>
 
       <div>

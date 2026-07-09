@@ -33,7 +33,7 @@ module.exports = (sequelize, DataTypes) => {
             defaultValue: "local",
         },
         lastSeen: {
-            type: DataTypes.DATE
+            type: DataTypes.DATE,
         }
     }, {
         timestamps: true
